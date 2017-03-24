@@ -7,12 +7,39 @@
 //
 
 import UIKit
+import PinterestSDK
 
 class ViewController: UIViewController {
+  
+  
 
+  @IBOutlet weak var loginButton: UIButton!
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
+    
+  }
+  @IBAction func loginButtonTapped(_ sender: UIButton) {
+    
+    PDKClient.sharedInstance().authenticate(withPermissions:
+      [PDKClientReadPublicPermissions,
+       PDKClientWritePublicPermissions,
+       PDKClientReadRelationshipsPermissions,
+       PDKClientWriteRelationshipsPermissions], from: self, withSuccess: { (result) in
+        //
+        if ((result?.user().firstName!) != nil) {
+          let name = result?.user().firstName!
+          print("This person: \(name) signed in!")
+        } else {
+          
+          print(result?.user().firstName! ?? "User does not have first name")
+          
+        }
+        
+    }) { (error) in
+      //
+    }
+    
   }
 
   override func didReceiveMemoryWarning() {
