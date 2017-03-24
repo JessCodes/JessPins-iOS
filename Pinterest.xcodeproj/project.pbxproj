@@ -13,6 +13,7 @@
 		C8435C1B1E849A61007F6420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8435C191E849A61007F6420 /* Main.storyboard */; };
 		C8435C1D1E849A61007F6420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8435C1C1E849A61007F6420 /* Assets.xcassets */; };
 		C8435C201E849A61007F6420 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8435C1E1E849A61007F6420 /* LaunchScreen.storyboard */; };
+		C8692A281E84C2560001A94B /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8692A271E84C2560001A94B /* BoardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		C8435C1F1E849A61007F6420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8435C211E849A61007F6420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8692A261E84A0B40001A94B /* Pinterest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pinterest-Bridging-Header.h"; sourceTree = "<group>"; };
+		C8692A271E84C2560001A94B /* BoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				C8435C1C1E849A61007F6420 /* Assets.xcassets */,
 				C8435C1E1E849A61007F6420 /* LaunchScreen.storyboard */,
 				C8435C211E849A61007F6420 /* Info.plist */,
+				C8692A271E84C2560001A94B /* BoardViewController.swift */,
 			);
 			path = Pinterest;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			files = (
 				C8435C181E849A61007F6420 /* ViewController.swift in Sources */,
 				C8435C161E849A61007F6420 /* AppDelegate.swift in Sources */,
+				C8692A281E84C2560001A94B /* BoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

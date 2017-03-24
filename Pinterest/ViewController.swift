@@ -26,8 +26,9 @@ class ViewController: UIViewController {
        PDKClientWriteRelationshipsPermissions], from: self, withSuccess: { (result) in
         //
         if ((result?.user().firstName!) != nil) {
-          let name = result?.user().firstName!
-          print("This person: \(name) signed in!")
+          if (result?.user().firstName!) != nil {
+            self.performSegue(withIdentifier: "toBoard", sender: sender)
+          }
         } else {
           
           print(result?.user().firstName! ?? "User does not have first name")
