@@ -7,23 +7,41 @@
 //
 
 import Foundation
+import SDWebImage
 
 class BoardViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+  let networkHandler = PinterestNetworking()
+  var boardData = [BoardDataModel]() {
+    didSet {
+      pinBoardCollectionView.reloadData()
+    }
+  }
+  
   @IBOutlet var pinBoardCollectionView: UICollectionView!
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    networkHandler.getBoardData(completionHandler: {(response) -> Void in
+      self.boardData = response
+    })
+    
     self.pinBoardCollectionView.backgroundColor = UIColor.red
   }
   
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return 10
+    return boardData.count
   }
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    let collectionView = collectionView.dequeueReusableCell(withReuseIdentifier: "boardCell", for: indexPath)
-    return collectionView
+    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "boardCell", for: indexPath)
+    let view = UIView()
+    let imageView = UIImageView()
+    imageView.frame = cell.bounds
+    imageView.sd_setImage(with: URL(string: boardData[indexPath.row].image), placeholderImage: nil, options: .refreshCached)
+    view.addSubview(imageView)
+    cell.backgroundView = view
+    return cell
   }
 
 }

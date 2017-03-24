@@ -14,6 +14,8 @@
 		C8435C1D1E849A61007F6420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8435C1C1E849A61007F6420 /* Assets.xcassets */; };
 		C8435C201E849A61007F6420 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8435C1E1E849A61007F6420 /* LaunchScreen.storyboard */; };
 		C8692A281E84C2560001A94B /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8692A271E84C2560001A94B /* BoardViewController.swift */; };
+		C8692A2A1E84CC220001A94B /* PinterestNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8692A291E84CC220001A94B /* PinterestNetworking.swift */; };
+		C8A001171E84FB9A00B36E59 /* BoardDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A001161E84FB9A00B36E59 /* BoardDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		C8435C211E849A61007F6420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8692A261E84A0B40001A94B /* Pinterest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pinterest-Bridging-Header.h"; sourceTree = "<group>"; };
 		C8692A271E84C2560001A94B /* BoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
+		C8692A291E84CC220001A94B /* PinterestNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinterestNetworking.swift; sourceTree = "<group>"; };
+		C8A001161E84FB9A00B36E59 /* BoardDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 				C8435C1E1E849A61007F6420 /* LaunchScreen.storyboard */,
 				C8435C211E849A61007F6420 /* Info.plist */,
 				C8692A271E84C2560001A94B /* BoardViewController.swift */,
+				C8692A291E84CC220001A94B /* PinterestNetworking.swift */,
+				C8A001161E84FB9A00B36E59 /* BoardDataModel.swift */,
 			);
 			path = Pinterest;
 			sourceTree = "<group>";
@@ -217,8 +223,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8A001171E84FB9A00B36E59 /* BoardDataModel.swift in Sources */,
 				C8435C181E849A61007F6420 /* ViewController.swift in Sources */,
 				C8435C161E849A61007F6420 /* AppDelegate.swift in Sources */,
+				C8692A2A1E84CC220001A94B /* PinterestNetworking.swift in Sources */,
 				C8692A281E84C2560001A94B /* BoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

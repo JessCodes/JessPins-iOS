@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         if ((result?.user().firstName!) != nil) {
           if (result?.user().firstName!) != nil {
             self.performSegue(withIdentifier: "toBoard", sender: sender)
+            print("REQUEST RESULT: \(result?.user())")
           }
         } else {
           
