@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		549E1EAFBD3C87E0F9E59179 /* Pods_Pinterest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6885320264C837446C6D84 /* Pods_Pinterest.framework */; };
 		C8435C161E849A61007F6420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8435C151E849A61007F6420 /* AppDelegate.swift */; };
 		C8435C181E849A61007F6420 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8435C171E849A61007F6420 /* ViewController.swift */; };
 		C8435C1B1E849A61007F6420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8435C191E849A61007F6420 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F6885320264C837446C6D84 /* Pods_Pinterest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pinterest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64F3702AC917F55236A549A4 /* Pods-Pinterest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pinterest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pinterest/Pods-Pinterest.debug.xcconfig"; sourceTree = "<group>"; };
+		88D155E98AACD2A0F6D232C4 /* Pods-Pinterest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pinterest.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pinterest/Pods-Pinterest.release.xcconfig"; sourceTree = "<group>"; };
 		C8435C121E849A61007F6420 /* Pinterest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pinterest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8435C151E849A61007F6420 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8435C171E849A61007F6420 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				549E1EAFBD3C87E0F9E59179 /* Pods_Pinterest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67D9246E2A9037C054D942F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64F3702AC917F55236A549A4 /* Pods-Pinterest.debug.xcconfig */,
+				88D155E98AACD2A0F6D232C4 /* Pods-Pinterest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		97D7842DE0E064E6ED9E6381 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F6885320264C837446C6D84 /* Pods_Pinterest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C8435C091E849A60007F6420 = {
 			isa = PBXGroup;
 			children = (
 				C8435C141E849A61007F6420 /* Pinterest */,
 				C8435C131E849A61007F6420 /* Products */,
+				67D9246E2A9037C054D942F0 /* Pods */,
+				97D7842DE0E064E6ED9E6381 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8435C241E849A61007F6420 /* Build configuration list for PBXNativeTarget "Pinterest" */;
 			buildPhases = (
+				FBAD4154A67E5ADDA96294F7 /* [CP] Check Pods Manifest.lock */,
 				C8435C0E1E849A60007F6420 /* Sources */,
 				C8435C0F1E849A60007F6420 /* Frameworks */,
 				C8435C101E849A60007F6420 /* Resources */,
+				58E881BE9E3CE101D522E93C /* [CP] Embed Pods Frameworks */,
+				CED48061E25BFFC91B90EA82 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		58E881BE9E3CE101D522E93C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pinterest/Pods-Pinterest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CED48061E25BFFC91B90EA82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pinterest/Pods-Pinterest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBAD4154A67E5ADDA96294F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C8435C0E1E849A60007F6420 /* Sources */ = {
@@ -257,6 +332,7 @@
 		};
 		C8435C251E849A61007F6420 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64F3702AC917F55236A549A4 /* Pods-Pinterest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 254LGM2EZ7;
@@ -270,6 +346,7 @@
 		};
 		C8435C261E849A61007F6420 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88D155E98AACD2A0F6D232C4 /* Pods-Pinterest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 254LGM2EZ7;
