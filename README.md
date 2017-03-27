@@ -3,7 +3,7 @@
 
 An iOS coding challenge for [Pinterest](https://www.pinterest.com/). 
 
-The coding challenge entailed using the [Pinterest iOS SDK] (https://developers.pinterest.com/docs/sdks/ios/) to build a simplified Pinterest app with the following requirements:
+The coding challenge entailed using the [Pinterest iOS SDK](https://developers.pinterest.com/docs/sdks/ios/) to build a simplified Pinterest app with the following requirements:
 
 * supporting authentication and login of Pinterest accounts
 * viewing a feed of the user’s boards
